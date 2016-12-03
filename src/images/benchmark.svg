@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Option-E---Scroll-Header" transform="translate(-553.000000, -391.000000)">
+            <g id="Group-7" transform="translate(458.000000, 391.000000)">
+                <g id="Group" transform="translate(95.000000, 0.000000)">
+                    <path d="M23,46 C10.31787,46 0,35.68213 0,23 C0,10.31787 10.31787,0 23,0 C35.68213,0 46,10.31787 46,23 C46,35.68213 35.68213,46 23,46 L23,46 Z" id="Shape" fill="#545454"></path>
+                    <path d="M41.31842,31 C42.39374,28.54755 43,25.84473 43,23 C43,11.97205 34.02795,3 23,3 C11.97211,3 3,11.97205 3,23 C3,25.84473 3.60626,28.54755 4.68158,31 L41.31842,31 L41.31842,31 Z" id="Shape" fill="#FFFFFF"></path>
+                    <path d="M25.12278,25.12278 C23.95315,26.29241 22.04977,26.29241 20.88014,25.12278 C19.71051,23.95315 17,17 17,17 C17,17 23.95315,19.71051 25.12278,20.88014 C26.29241,22.04977 26.29241,23.95315 25.12278,25.12278 L25.12278,25.12278 Z" id="Shape" fill="#545454"></path>
+                    <path d="M23,8 C18.8645,8 15.1145,9.68225 12.39838,12.39838 L15.22547,15.22547 C17.21729,13.23364 19.96729,12 23,12 C29.06543,12 34,16.93457 34,23 L38,23 C38,14.729 31.271,8 23,8 L23,8 Z" id="Shape" fill="#F40026"></path>
+                    <path d="M8,23 L12,23 C12,19.96729 13.23364,17.21729 15.22546,15.22546 L12.39837,12.39837 C9.68225,15.1145 8,18.8645 8,23 L8,23 Z" id="Shape" fill="#DCCD09"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
