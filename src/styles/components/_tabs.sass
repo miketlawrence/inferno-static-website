@@ -17,13 +17,25 @@
 		position: absolute
 		transition: all 300ms ease-in-out
 		background: $red
+		&::after
+			position: absolute;
+			content: ''
+			height: 0
+			width: 0
 
 .htabs
 	border-top: 2px solid rgba($grey, 0.6)
 	padding-top: 1em
 	> span
+		left: 0 // default first
+		width: 10em // default width
 		height: 2px
 		top: -2px !important
+		&::after
+			border-left: 1em solid transparent
+			border-right: 1em solid transparent
+			border-top: 0.75em solid $red
+			transform: translateX(-50%)
 
 .vtabs
 	border-right: 2px solid rgba($grey, 0.6)
@@ -31,11 +43,20 @@
 	padding: 0
 	margin-right: 2em
 	padding-right: 2em
+	padding-top: 1em
 	text-align: right
 	> a
 		line-height: 2em
 	> span
+		top: 1em // default to first
 		height: 2em
 		right: -2px
 		width: 2px !important
 		left: auto !important
+		&::after
+			border-bottom: 1em solid transparent
+			border-top: 1em solid transparent
+			border-right: 0.75em solid $red
+			top: 50%
+			transform: translateY(-50%)
+			left: -0.75em
