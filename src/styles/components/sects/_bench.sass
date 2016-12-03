@@ -17,6 +17,15 @@
 		border-right: 0
 		border-top: 0
 
+	figcaption
+		color: $red
+		font-weight: bold
+		max-width: 25em // 400
+		padding-top: 0.5em
+		text-transform: uppercase
+		letter-spacing: 2px
+
+
 	.bar
 		width: 0 // trans start
 		height: 2em // 32px
@@ -33,8 +42,8 @@
 				transition-delay: $i * 100ms
 
 		label
-			display: block
+			position: absolute
+			font-size: 0.8em
 			min-width: 5em // 80px
-			transform: translateX(-100%)
-			margin-left: -2em
+			left: -1em
 
