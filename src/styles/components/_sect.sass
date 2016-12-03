@@ -1,0 +1,40 @@
+/**
+ * Generic Sections
+ */
+
+$box-padding:				8 * $base-unit // 64px
+$box-icon-width:		6 * $base-unit // 48px
+
+section
+	display: block
+	position: relative
+	padding: $base-unit * 8
+
+	h3
+		text-align: center
+		color: $red
+
+	&.offwhite
+		background: darken($white, 4%)
+
+	&.boxes
+		padding: 0
+		> div
+			flex: 33%
+			position: relative
+			padding: $box-padding
+			padding-left: $box-padding + 2*$base-unit
+			border: 1px solid $white
+		h4
+			font-size: 1.15em
+			padding-bottom: 0.45em
+		svg
+			width: $box-icon-width
+			height: $box-icon-width
+			position: absolute
+			left: 1em
+			//
+			border-radius: 50%
+			background: $red
+
+
