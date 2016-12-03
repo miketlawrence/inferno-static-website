@@ -1,0 +1,25 @@
+*
+	margin: 0
+	padding: 0
+
+*, *:before, *:after
+	box-sizing: border-box
+
+body
+	color: $base-text-color
+	font-size: $base-text-size
+	font-weight: $base-text-weight
+	font-family: $base-text-family
+	background-color: $base-bg-color
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	-webkit-touch-callout: none
+	+selection(#e53935, 0.85)
+	overflow-x: hidden
+	+font-smoothing()
+
+	// +MQ(tablet)
+	// 	font-size: $base-text-size * 0.9
+
+img
+	pointer-events: none
+	user-select: none
