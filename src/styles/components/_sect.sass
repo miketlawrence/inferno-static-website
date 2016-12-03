@@ -2,10 +2,6 @@
  * Generic Sections
  */
 
-$box-padding:				8 * $base-unit // 64px
-$box-icon-left:			2 * $base-unit // 16px
-$box-icon-width:		5 * $base-unit // 40px
-
 section
 	display: block
 	position: relative
@@ -18,20 +14,3 @@ section
 
 	&.alt
 		background: darken($white, 4%)
-
-	&.boxes
-		padding: 0
-		> div
-			flex: 33%
-			position: relative
-			padding: $box-padding
-			padding-left: $box-icon-width + 2*$box-icon-left
-			border: 1px solid $white
-		h4
-			font-size: 1.15em
-			padding-bottom: 0.45em
-		img
-			width: $box-icon-width
-			height: $box-icon-width
-			position: absolute
-			left: $box-icon-left
