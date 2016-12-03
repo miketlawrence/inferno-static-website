@@ -11,7 +11,8 @@
 ```
 git clone https://github.com/lukeed/fly-kit-web
 npm install
-npm start
+npm start 
+# or npm run watch
 ```
 
 > **Pro Tip:** Use [Yarn](https://yarnpkg.com/) to install NPM dependencies 3x faster than NPM!
