@@ -97,7 +97,7 @@
 			<h3>Our Benchmarks</h3>
 
 			<div class="tab-group">
-				<div class="tabs htabs" dflex>
+				<div dflex class="tabs htabs">
 					<a flex href="#" class="active">JS Frameworks</a>
 					<a flex href="#">Virtual DOM</a>
 					<a flex href="#">UI Bench</a>
@@ -106,7 +106,7 @@
 					<span></span>
 				</div>
 
-				<div class="tab-content" dflex>
+				<div dflex class="tab-content active">
 					<p flex>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quia, temporibus tempora voluptas fugiat enim quaerat ea repudiandae molestias dolore voluptatibus eaque corporis distinctio velit repellendus cumque dicta consequuntur magni.</p>
 
 					<div class="bar-chart">
@@ -122,11 +122,24 @@
 				</div>
 			</div>
 
-			<a class="btn" href="#" >Learn about Performance</a>
+			<a class="btn" href="#">Learn about Performance</a>
 		</section>
 
-		<section>
+		<section class="maxw">
 			<h3>React-like, but different</h3>
+
+			<div dflex class="tab-group">
+				<div dflex flex column jcenter class="tabs vtabs">
+					<a href="#" class="active">Compatibility</a>
+					<a href="#">Custom Namespaces</a>
+					<a href="#">Stateful Components</a>
+					<span></span>
+				</div>
+
+				<div flex="2" class="tab-content active">
+					<p>Inferno strives to be compatible with much of React’s basic API. However, in some places, alternative implementations have been used. Non-performant features have been removed or replaced where an alternative solution is easy to adopt without too many changes. Inferno doesn’t have React’s synthetic events, which means DOM elements have their events triggered in the same manner as you’d expect from the browser you’re running.</p>
+				</div>
+			</div>
 		</section>
 
 		<section class="alt">

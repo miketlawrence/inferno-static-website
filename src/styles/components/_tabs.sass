@@ -13,14 +13,29 @@
 		color: $black
 		&.active
 			color: $red
+	> span
+		position: absolute
+		transition: all 300ms ease-in-out
+		background: $red
 
 .htabs
 	border-top: 2px solid rgba($grey, 0.6)
 	padding-top: 1em
 	> span
 		height: 2px
-		top: -2px
-		position: absolute
-		transition: all 300ms ease-in-out
-		background: $red
+		top: -2px !important
 
+.vtabs
+	border-right: 2px solid rgba($grey, 0.6)
+	margin: 0
+	padding: 0
+	margin-right: 2em
+	padding-right: 2em
+	text-align: right
+	> a
+		line-height: 2em
+	> span
+		height: 2em
+		right: -2px
+		width: 2px !important
+		left: auto !important

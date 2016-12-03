@@ -13,6 +13,7 @@ var _active = 'active';
 function animateLine(tab, line) {
 	line.style.width = tab.offsetWidth + 'px';
 	line.style.left = tab.offsetLeft + 'px';
+	line.style.top = tab.offsetTop + 'px'; // vtabs
 }
 
 function toggle(tabs, contents, line, newIdx) {
