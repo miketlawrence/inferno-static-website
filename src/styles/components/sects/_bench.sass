@@ -1,0 +1,40 @@
+/**
+ * Benchmarks Section
+ */
+
+.bench
+	text-align: center
+
+	img
+		width: 3.5em
+		display: block
+		margin: 0 auto $base-unit
+
+	figure
+		max-width: 25em // 400
+		padding: 1.5em 1.5em 0.5em 1em
+		border: 1px solid $red
+		border-right: 0
+		border-top: 0
+
+	.bar
+		width: 0 // trans start
+		height: 2em // 32px
+		line-height: 2em
+		margin-bottom: 0.5em
+		background: lighten($black, 20%)
+		transition: width 300ms ease-in-out
+		text-align: right
+		&:first-of-type
+			background: $red
+
+		@for $i from 1 through 5
+			&:nth-of-type(#{$i})
+				transition-delay: $i * 100ms
+
+		label
+			display: block
+			min-width: 5em // 80px
+			transform: translateX(-100%)
+			margin-left: -2em
+
