@@ -44,7 +44,7 @@ export async function build() {
 export async function release() {
 	await this.start('build');
 	await this.source(`${tar}/**/*`)
-		.rev({ignores: ['.html', '.png', 'jpg', '.jpeg', '.svg', '.ico', '.gif', '.json', '.webapp', '.txt']})
+		.rev({ignores: ['.html', '.png', 'jpg', '.jpeg', '.svg', '.ico', '.gif', '.json', '.txt']})
 		.revManifest({dest: rel, trim: tar}).revReplace().target(rel);
 	await this.source(`${rel}/*.html`).htmlmin().target(rel);
 }
