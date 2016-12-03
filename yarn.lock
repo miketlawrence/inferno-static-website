@@ -652,24 +652,9 @@ chalk@^1.0.0, chalk@^1.1.0, chalk@^1.1.1, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chokidar@1.6.0:
+chokidar@1.6.0, chokidar@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.6.0.tgz#90c32ad4802901d7713de532dc284e96a63ad058"
-  dependencies:
-    anymatch "^1.3.0"
-    async-each "^1.0.0"
-    glob-parent "^2.0.0"
-    inherits "^2.0.1"
-    is-binary-path "^1.0.0"
-    is-glob "^2.0.0"
-    path-is-absolute "^1.0.0"
-    readdirp "^2.0.0"
-  optionalDependencies:
-    fsevents "^1.0.0"
-
-chokidar@^1.6.0:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.6.1.tgz#2f4447ab5e96e50fb3d789fd90d4c72e0e4c70c2"
   dependencies:
     anymatch "^1.3.0"
     async-each "^1.0.0"
@@ -973,9 +958,19 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
+date-now@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/date-now/-/date-now-1.0.1.tgz#bb7d086438debe4182a485fb3df3fbfb99d6153c"
+
 date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
+
+debounce@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.0.0.tgz#0948af513d2e4ce407916f8506a423d3f9cf72d8"
+  dependencies:
+    date-now "1.0.1"
 
 debug@0.7.4:
   version "0.7.4"
@@ -1620,12 +1615,6 @@ fly-rev@^2.0.0:
   dependencies:
     rev-hash "^1.0.0"
     sort-keys "^1.1.1"
-
-fly-riot@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/fly-riot/-/fly-riot-2.0.0.tgz#386e64017f147ace207ee1d928081de6b6530451"
-  dependencies:
-    riot "^2.5.0"
 
 fly-sass@^2.0.0:
   version "2.0.0"
@@ -2945,7 +2934,7 @@ opn@4.0.2:
     object-assign "^4.0.1"
     pinkie-promise "^2.0.0"
 
-optionator@^0.8.1, optionator@^0.8.2:
+optionator@^0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/optionator/-/optionator-0.8.2.tgz#364c5e409d3f4d6301d6c0b4c05bba50180aeb64"
   dependencies:
@@ -3250,17 +3239,17 @@ qs@0.4.x:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-0.4.2.tgz#3cac4c861e371a8c9c4770ac23cda8de639b8e5f"
 
-qs@6.2.1:
+qs@6.2.1, "qs@>= 0.4.0":
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.1.tgz#ce03c5ff0935bc1d9d69a9f14cbd18e568d67625"
-
-"qs@>= 0.4.0", qs@~6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 
 qs@~5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-5.2.1.tgz#801fee030e0b9450d6385adc48a4cc55b44aedfc"
+
+qs@~6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 
 querystring-es3@~0.2.0:
   version "0.2.1"
@@ -3449,7 +3438,31 @@ req-all@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/req-all/-/req-all-0.1.0.tgz#130051e2ace58a02eacbfc9d448577a736a9273a"
 
-request@2, request@^2.61.0, request@^2.75.0:
+request@2, request@2.65.0, request@^2.61.0:
+  version "2.65.0"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.65.0.tgz#cc1a3bc72b96254734fc34296da322f9486ddeba"
+  dependencies:
+    aws-sign2 "~0.6.0"
+    bl "~1.0.0"
+    caseless "~0.11.0"
+    combined-stream "~1.0.5"
+    extend "~3.0.0"
+    forever-agent "~0.6.1"
+    form-data "~1.0.0-rc3"
+    har-validator "~2.0.2"
+    hawk "~3.1.0"
+    http-signature "~0.11.0"
+    isstream "~0.1.2"
+    json-stringify-safe "~5.0.1"
+    mime-types "~2.1.7"
+    node-uuid "~1.4.3"
+    oauth-sign "~0.8.0"
+    qs "~5.2.0"
+    stringstream "~0.0.4"
+    tough-cookie "~2.2.0"
+    tunnel-agent "~0.4.1"
+
+request@^2.75.0:
   version "2.79.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.79.0.tgz#4dfe5bf6be8b8cdc37fcf93e04b65577722710de"
   dependencies:
@@ -3473,30 +3486,6 @@ request@2, request@^2.61.0, request@^2.75.0:
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
     uuid "^3.0.0"
-
-request@2.65.0:
-  version "2.65.0"
-  resolved "https://registry.yarnpkg.com/request/-/request-2.65.0.tgz#cc1a3bc72b96254734fc34296da322f9486ddeba"
-  dependencies:
-    aws-sign2 "~0.6.0"
-    bl "~1.0.0"
-    caseless "~0.11.0"
-    combined-stream "~1.0.5"
-    extend "~3.0.0"
-    forever-agent "~0.6.1"
-    form-data "~1.0.0-rc3"
-    har-validator "~2.0.2"
-    hawk "~3.1.0"
-    http-signature "~0.11.0"
-    isstream "~0.1.2"
-    json-stringify-safe "~5.0.1"
-    mime-types "~2.1.7"
-    node-uuid "~1.4.3"
-    oauth-sign "~0.8.0"
-    qs "~5.2.0"
-    stringstream "~0.0.4"
-    tough-cookie "~2.2.0"
-    tunnel-agent "~0.4.1"
 
 require-directory@^2.1.1:
   version "2.1.1"
@@ -3569,57 +3558,9 @@ rimraf@2, rimraf@^2.2.8, rimraf@^2.4.2, rimraf@~2.5.1, rimraf@~2.5.4:
   dependencies:
     glob "^7.0.5"
 
-riot-cli@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/riot-cli/-/riot-cli-2.6.2.tgz#2efd43bed8b286d558dc09b55a5f0e80c9f10c09"
-  dependencies:
-    chalk "^1.1.3"
-    chokidar "^1.6.0"
-    co "^4.6.0"
-    optionator "^0.8.1"
-    riot-compiler "^2.5.3"
-    rollup "^0.36.1"
-    shelljs "^0.7.3"
-
-riot-compiler@^2.5.3, riot-compiler@^2.5.5:
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/riot-compiler/-/riot-compiler-2.5.7.tgz#dc418366f1178d39c6c18fd9fc0190cbeecc1695"
-
-riot-observable@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/riot-observable/-/riot-observable-2.5.0.tgz#5fb9682685b6ebd52d54ad0f4c4e72af9eb904c4"
-
-riot-route@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/riot-route/-/riot-route-2.5.0.tgz#aafcd0ee2df470db89a587770cd557760b2ac2b5"
-  dependencies:
-    riot-observable "^2.5.0"
-
-riot-tmpl@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/riot-tmpl/-/riot-tmpl-2.4.2.tgz#daa1a86c430dbf5ed79530014355f10692ad67b7"
-
-riot@^2.5.0:
-  version "2.6.7"
-  resolved "https://registry.yarnpkg.com/riot/-/riot-2.6.7.tgz#9995b7563b35c4fea435213bc91cfb2809382373"
-  dependencies:
-    riot-cli "^2.6.2"
-    riot-compiler "^2.5.5"
-    riot-observable "^2.5.0"
-    riot-route "^2.5.0"
-    riot-tmpl "^2.4.2"
-    simple-dom "0.3.2"
-    simple-html-tokenizer "^0.2.5"
-
 ripemd160@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ripemd160/-/ripemd160-1.0.1.tgz#93a4bbd4942bc574b69a8fa57c71de10ecca7d6e"
-
-rollup@^0.36.1:
-  version "0.36.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.36.3.tgz#c89ac479828924ff8f69c1d44541cb4ea2fc11fc"
-  dependencies:
-    source-map-support "^0.4.0"
 
 run-async@^0.1.0:
   version "0.1.0"
@@ -3730,7 +3671,7 @@ shell-quote@^1.4.3:
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
 
-shelljs@^0.7.3, shelljs@^0.7.5:
+shelljs@^0.7.5:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.5.tgz#2eef7a50a21e1ccf37da00df767ec69e30ad0675"
   dependencies:
@@ -3741,14 +3682,6 @@ shelljs@^0.7.3, shelljs@^0.7.5:
 signal-exit@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.1.tgz#5a4c884992b63a7acd9badb7894c3ee9cfccad81"
-
-simple-dom@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/simple-dom/-/simple-dom-0.3.2.tgz#0663d10f1556f1500551d518f56e3aba0871371d"
-
-simple-html-tokenizer@^0.2.5:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/simple-html-tokenizer/-/simple-html-tokenizer-0.2.5.tgz#8b52a15ee899959fc86c37490b278f5adf6bdbc0"
 
 slice-ansi@0.0.4:
   version "0.0.4"
@@ -3824,19 +3757,13 @@ sort-keys@^1.1.1:
   dependencies:
     is-plain-obj "^1.0.0"
 
-source-map-support@^0.4.0:
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.6.tgz#32552aa64b458392a85eab3b0b5ee61527167aeb"
-  dependencies:
-    source-map "^0.5.3"
-
 source-map@0.4.x:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.1, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
+source-map@^0.5.1, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 

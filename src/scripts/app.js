@@ -1,11 +1,25 @@
 'use strict';
 
-var $ = require('./demo');
+var debounce = require('debounce');
 
-var obj = $.generate();
+var ran = 0;
+var bench = document.querySelector('.bench');
+// `.bench` should hit 65% of win.height, from bottom
+var target = Math.round(bench.offsetTop - window.innerHeight * 0.35);
 
-var str;
-for (var k in obj) {
-	str = [k, obj[k]].map($.capitalize).join(' ');
-	console.log(str);
+var bars = [].slice.call(document.getElementsByClassName('bar'));
+
+var widths = bars.map(function (el) {
+	return el.getAttribute('width');
+});
+
+function onScroll() {
+	if (!ran && window.scrollY >= target) {
+		ran = 1;
+		bars.forEach(function (el, idx) {
+			el.style.width = widths[idx];
+		});
+	}
 }
+
+window.onscroll = debounce(onScroll, 120);
