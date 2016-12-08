@@ -14,9 +14,9 @@
 		color: $black
 		line-height: 5em
 		padding-left: 1.25em
-		&:first-of-type
-			padding-left: 0
-			float: left
+		// &:first-of-type
+		// 	padding-left: 0
+		// 	float: left
 
 	+MQ(tablet)
 		position: fixed
@@ -47,16 +47,14 @@
 			padding: 1em 2em !important
 
 .nav-btn
-	position: absolute
 	+hide-text()
+	display: none
+	position: absolute
 	height: 4em
 	width: 4em
 	left: 2em
 	top: 2em
 	z-index: 1
 	border: 2px solid green
-
-#trigger
-	display: none
 	+MQ(tablet)
 		display: block
