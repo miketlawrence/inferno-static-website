@@ -2,6 +2,7 @@
  * Tabs: Toggles & Active Indicator
  */
 
+var qs = require('./share').qs;
 var cls = require('./share').cls;
 var tag = require('./share').tag;
 var each = require('./share').each;
@@ -33,7 +34,7 @@ function toggle(tabs, contents, line, newIdx) {
 }
 
 tabs.forEach(function (grp) {
-	var line = grp.querySelector('span');
+	var line = qs('span', grp);
 	var cnts = cls('tab-content', grp.parentNode);
 	var tabs = tag('a', grp);
 

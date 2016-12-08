@@ -7,3 +7,4 @@ window.onload = scroller; // check onload
 window.onscroll = debounce(scroller, 120);
 
 require('./tabs');
+require('./menu');
