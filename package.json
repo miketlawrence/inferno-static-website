@@ -44,6 +44,8 @@
       "release/**"
     ],
     "rules": {
+      "import/no-unassigned-import": 1,
+      "no-mixed-operators": 1,
       "guard-for-in": 1
     }
   }

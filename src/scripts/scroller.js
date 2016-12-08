@@ -23,4 +23,4 @@ module.exports = function () {
 			el.style.width = widths[idx];
 		});
 	}
-}
+};

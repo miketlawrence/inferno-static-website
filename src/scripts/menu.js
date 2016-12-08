@@ -2,7 +2,6 @@
  * Menu Toggles
  */
 
-var qs = require('./share').qs;
 var cls = require('./share').cls;
 
 var classes = document.body.classList;

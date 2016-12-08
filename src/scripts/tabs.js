@@ -49,7 +49,7 @@ tabs.forEach(function (grp) {
 		el.addEventListener('click', function (e) {
 			e.preventDefault();
 			toggle(tabs, cnts, line, idx);
-		})
+		});
 	});
 
 	// first render
