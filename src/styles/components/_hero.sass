@@ -9,9 +9,6 @@ $hero-svg-width : 130px
 	max-width: 40em
 	margin: 8em auto
 
-	div
-		flex: 1
-
 	h2
 		font-size: 1.6em
 		font-weight: normal
@@ -24,3 +21,15 @@ $hero-svg-width : 130px
 		// position: absolute
 		width: $hero-svg-width
 		top: 0
+
+	+MQ(tablet)
+		margin: 2em auto
+		text-align: center
+		padding: 0 2em 2em
+		flex-direction: column-reverse
+		svg
+			padding-top: 2.5em
+			margin: 0 auto -2em
+			width: 1.4 * $hero-svg-width
+		.btn
+			margin: 0.5em
