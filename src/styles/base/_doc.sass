@@ -16,6 +16,8 @@ body
 	+selection(#e53935, 0.85)
 	overflow-x: hidden
 	+font-smoothing()
+	&.menu--open
+		overflow-y: hidden // no scrolling
 
 	+MQ(tablet)
 		font-size: $base-text-size * 0.9
