@@ -5,7 +5,7 @@
 section
 	display: block
 	position: relative
-	padding: $base-unit * 8
+	padding: 4em // 64
 
 	h3
 		font-size: 1.3em
@@ -15,3 +15,6 @@ section
 
 	&.alt
 		background: darken($white, 4%)
+
+	+MQ(tablet)
+		padding: 2em
