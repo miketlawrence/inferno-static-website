@@ -1,0 +1,8 @@
+// Media Query Breakpoint aliases
+$breakpoints: (
+	"tiny"          "screen and (max-width: 321px)",
+	"palm"          "screen and (max-width: 480px)",
+	"palm-up"    		"screen and (min-width: 481px)",
+	"lap"           "screen and (min-width: 481px) and (max-width: 991px)",
+	"tablet"        "screen and (max-width: 769px)"
+);
