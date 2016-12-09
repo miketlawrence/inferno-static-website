@@ -19,11 +19,12 @@
 		display: block
 
 	pre
-		background: $grey
+		background: darken($lightGrey, 4%)
+		border: 1px solid $base-border-color
 
 	.example
 		margin-top: 2em
-		border: 1px solid $grey
+		border: 1px solid $base-border-color
 
 	+MQ(tablet)
 		figure
@@ -31,4 +32,3 @@
 			> div
 				display: block
 				margin: 0 auto 2em
-

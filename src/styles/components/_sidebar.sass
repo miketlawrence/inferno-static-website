@@ -1,0 +1,28 @@
+/**
+ * Sidebar Component
+ */
+
+#sidebar
+  flex: calc(25% - 2em)
+  border-right: 1px solid $base-border-color
+  margin-right: 2em
+
+  & + #main-content
+    flex: 75%
+
+  h3
+    font-size: $base-text-size
+    margin: $base-unit * 2 0
+
+  .nav
+    li
+
+    a
+      font-size: $base-text-size * .9
+      display: block
+      line-height: 1.25
+      padding: .5em
+      margin-left: -.5em
+
+      &:hover
+        background: $lightGrey
